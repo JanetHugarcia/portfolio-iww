@@ -1,11 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
 body{
 	background-color:$negro;
+	font-family: 'Oxygen', sans-serif;
+	font-size:16px;
 }
-iframe{
-	width:100%;
-	height:400px;
-}
+
 p{
-	padding-top:400px;
 	color:white;
+}
+
+#foco{
+	opacity:.3;
+}
+.hero-text{
+	padding:20% 0 ;
+	#maquina{
+		border:1px solid tomato;
+		padding:3%;
+		border-radius:10px;
+		font-size: 25px;
+		color:#00A29D;
+		margin:10%;
+		font-family: 'Poiret One', cursive;
+	}
+	p{
+		color:#00A29D;
+		font-family: 'Poiret One', cursive;
+		font-size: 5em;
+	}
 }
