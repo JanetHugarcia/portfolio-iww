@@ -7,16 +7,15 @@ body{
 	font-family: 'Oxygen', sans-serif;
 	font-size:16px;
 }
-
-p{
-	color:white;
+.pd{
+	padding-top:5%;
 }
-
 #foco{
 	opacity:.3;
 }
 .hero-text{
-	padding:20% 0 ;
+	padding:15%;
+
 	#maquina{
 		border:1px solid tomato;
 		padding:3%;
@@ -25,10 +24,54 @@ p{
 		color:#00A29D;
 		margin:10%;
 		font-family: 'Poiret One', cursive;
+		font-weight: 600;
+
 	}
 	p{
 		color:#00A29D;
 		font-family: 'Poiret One', cursive;
-		font-size: 5em;
+		font-size: 4em;
+  		text-shadow: 3px 3px 5px #f00,
+          
 	}
+}
+#preloader6{
+	display:inline-block;
+    position:relative;
+    width: 42px;
+    height: 42px;
+    animation: preloader_6 5s infinite linear;
+    span{
+	    width:20px;
+	    height:20px;
+	    position:absolute;
+	    background:red;
+	    display:block;
+	    animation: preloader_6_span 1s infinite linear;
+	}
+	span:nth-child(1){
+		background:linear-gradient($verde,darken($verde,10%)); 
+	}
+	span:nth-child(2){
+		left:22px;
+		background:rgba($verde,.6);
+		animation-delay: .2s;
+		}
+	span:nth-child(3){
+		top:22px;
+		background:linear-gradient($verde,lighten($verde,10%)); 
+	    animation-delay: .4s;
+	}
+	span:nth-child(4){
+		top:22px;
+		left:22px;
+		background:$verde;
+		animation-delay: .6s;
+		}
+}
+
+@keyframes preloader_6_span {
+   0% { transform:scale(1); }
+   50% { transform:scale(0.5); }
+   100% { transform:scale(1); }
 }

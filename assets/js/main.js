@@ -12,35 +12,65 @@ $(document).ready(function(){
 
     setInterval(Opacidad, 1000);
 
+    
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
 
-function maquina(contenedor,texto,intervalo){
-   // Calculamos la longitud del texto
-   longitud = texto.length;
-   // Obtenemos referencia del div donde se va a alojar el texto.
-   cnt = document.getElementById(contenedor);
-   var i=0;
-   // Creamos el timer
-   timer = setInterval(function(){
-      // Vamos añadiendo letra por letra y la _ al final.
-      cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + texto.charAt(i) + "_";
-      // Si hemos llegado al final del texto..
-      if(i >= longitud){
-         // Salimos del Timer y quitamos la barra baja (_)
-         clearInterval(timer);
-         cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
-         return true;
+
+  /*sticky*/
+  // Hide Header on on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('header').outerHeight();
+
+  $(window).scroll(function(event){
+      didScroll = true;
+  });
+
+  setInterval(function() {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 250);
+
+  function hasScrolled() {
+      var st = $(this).scrollTop();
+      
+      // Make sure they scroll more than delta
+      if(Math.abs(lastScrollTop - st) <= delta)
+          return;
+      
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight){
+          // Scroll Down
+          $('header').removeClass('menu-fixed').addClass('nav-up');
       } else {
-         // En caso contrario.. seguimos
-         i++;
-      }},intervalo);
-};
+          // Scroll Up
+          if(st + $(window).height() < $(document).height()) {
+              $('header').removeClass('nav-up').addClass('menu-fixed');
+          }
+      }
+      
+      lastScrollTop = st;
+  }
 
-var texto = "Hola mundo.. ";
-var texto1 = "Mi nombre es Janet ";
-var texto2 = "Quiero conocer el mundo del Front End y Back End ";
-var texto3 ="Quiero ser una full-stack"
-// 100 es el intervalo de minisegundos en el que se escribirá cada letra.
-maquina("maquina",texto,100);
-maquina("maquina",texto1,100);
-});
+  /*How to make the hero section always fill browser window?*/
+  $(window).resize(function() {
+          $('#hero').height($(window).height());
+  }).resize();
 });
