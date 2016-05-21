@@ -2,9 +2,12 @@
 @import url(https://fonts.googleapis.com/css?family=Rokkitt);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Oxygen);
+@font-face {
+  font-family: "Papyrus";
+  src: url("../../assets/fonts/Smooth_Papyrus_Demo.TTF"); }
 body {
   background-color: #191919;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Papyrus', sans-serif;
   font-size: 16px; }
 
 .pd {
@@ -24,53 +27,100 @@ body {
     margin: 10%;
     font-family: 'Poiret One', cursive;
     font-weight: 600; }
-  .hero-text p {
-    color: #00A29D;
+  .hero-text h1 {
+    color: white;
     font-family: 'Poiret One', cursive;
     font-size: 4em;
     text-shadow: 3px 3px 5px #f00; }
+  .hero-text #ocupacion {
+    text-shadow: 0 0 0 white;
+    font-size: 2em;
+    border-bottom: 1px solid #fa5475;
+    box-shadow: 0px 1px 0px white;
+    display: inline-block; }
 
-#preloader6 {
+CSS
+.controls {
+  padding: 2%;
+  background: #333;
+  color: #eee; }
+
+button {
   display: inline-block;
-  position: relative;
-  width: 42px;
-  height: 42px;
-  animation: preloader_6 5s infinite linear; }
-  #preloader6 span {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background: red;
-    display: block;
-    animation: preloader_6_span 1s infinite linear; }
-  #preloader6 span:nth-child(1) {
-    background: linear-gradient(#00A29D, #006f6c); }
-  #preloader6 span:nth-child(2) {
-    left: 22px;
-    background: rgba(0, 162, 157, 0.6);
-    animation-delay: .2s; }
-  #preloader6 span:nth-child(3) {
-    top: 22px;
-    background: linear-gradient(#00A29D, #00d5ce);
-    animation-delay: .4s; }
-  #preloader6 span:nth-child(4) {
-    top: 22px;
-    left: 22px;
-    background: #00A29D;
-    animation-delay: .6s; }
+  padding: .3em .7em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer; }
 
-@keyframes preloader_6_span {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.5); }
-  100% {
-    transform: scale(1); } }
+button.active {
+  background: #68b8c4; }
+
+button:focus {
+  outline: 0 none; }
+
+.containermixin {
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4; }
+
+.containermixin:after {
+  content: '';
+  display: inline-block;
+  width: 100%; }
+
+.containermixin .mix {
+  text-align: left;
+  margin-bottom: 2%;
+  display: none; }
+
+.controls {
+  padding: 2%;
+  background: #333;
+  color: #eee; }
+
+button {
+  display: inline-block;
+  padding: .3em .7em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer; }
+
+button.active {
+  background: #68b8c4; }
+
+button:focus {
+  outline: 0 none; }
+
+.containermixin {
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4; }
+
+.containermixin:after {
+  content: '';
+  display: inline-block;
+  width: 100%; }
+
+.containermixin .mix {
+  text-align: left;
+  margin-bottom: 2%;
+  display: none; }
+
 #hero {
-  background-color: #333;
+  background-image: url("../../assets/images/ciudad.jpg");
   background-size: cover; }
   #hero .fondocolor {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%; }
 
 .navbar-inverse {
@@ -89,6 +139,59 @@ body {
 
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: tomato; }
+
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 30px rgba(246, 7, 54, 0.3);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.scroll-down {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: #fff;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+  .scroll-down:hover {
+    opacity: 0.5; }
+  .scroll-down::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box; }
+  .scroll-down::before {
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb 3s infinite;
+    animation: sdb 3s infinite;
+    box-sizing: border-box; }
+
+#about {
+  background-color: #5e42a6;
+  color: white; }
 
 #aboutme {
   background-color: white; }
