@@ -1,27 +1,39 @@
 #hero{
-	background-image:url('../../assets/images/ciudad.jpg');
+	// background-image:url('../../assets/images/ciudad.jpg');
+  background-color:$fuxia;
 	background-size:cover;
 	.fondocolor{
-		background-color:rgba(0,0,0,.5);
+		// background-color:rgba(0,0,0,.5);
 		height: 100%;
 	}
 }
 .navbar-inverse {
-    background-color: transparent;
+    background-color: $fuxia;
     border-color: #080808;
+    border-radius: 0;
 }
 .navbar-brand {
     height: auto;
-    padding: 10px 20px 0px;
+    padding: 10px 20px 10px;
 }
 .navbar-right{
-	padding-top:15px;
+	padding-top: 15px;
+    padding-bottom: 5px;
 }    
-.navbar-toggle {
+.navbar-inverse .navbar-toggle {
 	margin-top:25px;
+  border-color:transparent;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: tomato;
+    background-color: white;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color:white;
+  &:hover{
+    font-weight: 700;
+  }
+
+
 }
 @-webkit-keyframes sdb {
   0% {

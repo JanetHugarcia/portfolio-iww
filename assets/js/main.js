@@ -24,22 +24,29 @@ $(document).ready(function(){
   }).resize();
 
 
-  $('.nav-link').on('click', function(e) {
-    e.preventDefault();
-    var el = $(this).attr('href');
-    scrollToElement(el);
-  });
-  
-  $(window).scroll(function() {
-    var x = $(window).scrollTop();
+  //---scroll animation-----
+$('a[href^="#"]').on('click', function(event) {
 
-    if (x >= 42) {
-      $("#navbar").show(200);
-    } else {
-      $("#navbar").hide(200);
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
     }
 
+});
+//stickky
+  var altura = $('.navbar').offset().top;
+  
+  $(window).on('scroll', function(){
+    if ( $(window).scrollTop() > altura ){
+      $('.navbar').addClass('menu-fixed');
+    } else {
+      $('.navbar').removeClass('menu-fixed');
+    }
   });
-
+ 
 });
 
