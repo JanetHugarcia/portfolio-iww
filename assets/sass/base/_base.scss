@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600,800,500,700);
 @font-face{
 	font-family:"Papyrus";
-	src:url("../../assets/fonts/Smooth_Papyrus_Demo.TTF");
+	src:url("../../assets/fonts/Dense-Regular.otf");
 }
 *{
 	margin:0;
@@ -95,7 +95,7 @@ small{
 // 	    animation: preloader_6_span 1s infinite linear;
 // 	}
 // 	span:nth-child(1){
-// 		background:linear-gradient($verde,darken($verde,10%)); 
+// 		background:linear-gradient($verde,darken($verde,10%));
 // 	}
 // 	span:nth-child(2){
 // 		left:22px;
@@ -104,7 +104,7 @@ small{
 // 		}
 // 	span:nth-child(3){
 // 		top:22px;
-// 		background:linear-gradient($verde,lighten($verde,10%)); 
+// 		background:linear-gradient($verde,lighten($verde,10%));
 // 	    animation-delay: .4s;
 // 	}
 // 	span:nth-child(4){

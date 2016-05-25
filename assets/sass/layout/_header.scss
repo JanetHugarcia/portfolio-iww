@@ -1,10 +1,11 @@
 #hero{
-	// background-image:url('../../assets/images/ciudad.jpg');
-  background-color:$fuxia;
+	 background-image:url('../../assets/images/jn-01.jpg');
+
+  //background-color:$violeta;
 	background-size:cover;
 	.fondocolor{
-		// background-color:rgba(0,0,0,.5);
-		height: 100%;
+      background-color:rgba(0,0,0,.3);
+		  height: 100%;
 	}
 }
 .navbar-inverse {
@@ -19,7 +20,7 @@
 .navbar-right{
 	padding-top: 15px;
     padding-bottom: 5px;
-}    
+}
 .navbar-inverse .navbar-toggle {
 	margin-top:25px;
   border-color:transparent;
@@ -62,11 +63,11 @@
       -webkit-transition: opacity 0.5s;
       -o-transition: opacity 0.5s;
       transition: opacity 0.5s;
-      
+
       &:hover{
         opacity: 0.5;
       }
-      
+
       &::after {
         position: absolute;
         content: '';
@@ -97,7 +98,7 @@
       }
     }
 #about {
-	
+
 	background-color: #5e42a6;
 	color: white;
 }
