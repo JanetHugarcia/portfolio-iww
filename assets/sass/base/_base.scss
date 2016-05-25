@@ -15,6 +15,16 @@ body{
 	font-family: 'Dosis', sans-serif;
 	font-size:18px;
 }
+.pdt{
+	padding-top:25px;
+}
+.pdb{
+	padding-bottom:25px;
+}
+.bck-white{
+	background-color:white;
+}
+
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 .menu-fixed {
 	position:fixed;
@@ -201,3 +211,28 @@ button:focus{
   display: none;
 }
 //---------------------------------
+//-------------------------lines
+.particletext {
+  	text-align:center;
+  	font-size:48px;
+  	position: relative;
+ }
+    .lines {
+	 	>.particle {
+	        position: absolute;
+	        background-color:rgba(244,67,54,0.5);
+	        animation: lines 3s linear infinite;
+	    }
+	}
+
+@keyframes lines {
+   0%, 50%, 100% {
+      transform:translateY(0%);
+   }
+   25% {
+      transform:translateY(100%);
+   }
+   75% {
+      transform:translateY(-100%);
+   }
+}

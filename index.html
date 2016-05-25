@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="hero">
       <div class="fondocolor">
         <div class="container">
@@ -16,7 +16,7 @@
             <div class="col-md-12">
               <div class="hero-text text-center">
                 <!--img#foco.white(src="assets/images/foco4.png", alt="")-->
-                <h1 id="titulo">Janet <span>Milagros</span></h1>
+                <h1 id="titulo" class="particletext lines">Janet <span>Milagros</span></h1>
                 <P id="ocupacion">Front-End Junior</P>
                 <div class="pd">
                   <div id="preloader6"><span></span><span></span><span></span><span></span></div>
@@ -36,24 +36,44 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#portfolio">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="aboutme">
+    <div id="aboutme" class="pdt pdb">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6"><img src="assets/images/jn.png" class="img-responsive"/></div>
+          <div class="col-md-6">
             <div class="text text-center">
               <h2>SOBRE MI</h2>
-              <p>Egresada de Laboratoria con estudios en computación e informática. Dispuesta a maquetar con Sass/Jade y crear aplicaciones con Javascript. Experiencia en Front End e interés en Back End, con el objetivo de convertirse en una Desarrolladora Full-stack.</p><img src="assets/images/jn.png"/>
+              <p>Egresada de Laboratoria con estudios en computación e informática. Dispuesta a maquetar con Sass/Jade y crear aplicaciones con Javascript. Experiencia en Front End e interés en Back End, con el objetivo de convertirse en una Desarrolladora Full-stack.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div id="frase" class="text-center">
+      <div class="container">
+        <div class="row pdt pdb">
+          <div class="col-md-6">
+            <blockquote>
+              <p>"Quiero aprender todo lo que pueda. Y aplicar lo aprendido para el beneficio de mi familia y de los que me rodean."</p><small>Algo para decir</small>
+            </blockquote>
+          </div>
+          <div class="col-md-6">
+            <blockquote>
+              <p>"Soy perseverante, y sé que todo se consigue a base de mucho trabajo y esfuerzo."</p><small>Acerca de mí</small>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills" class="bck-white">
+      <p>holass</p>
     </div>
     <div id="portfolio">
       <div class="container">
@@ -87,6 +107,24 @@
         </div>
       </div>
     </div>
+    <div id="contactme" class="bck-white text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>holitas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>© 2016</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.mixitup.js"></script>

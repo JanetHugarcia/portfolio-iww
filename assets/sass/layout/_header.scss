@@ -1,10 +1,9 @@
 #hero{
 	 background-image:url('../../assets/images/jn-01.jpg');
 
-  //background-color:$violeta;
+  background-color:$fuxia;
 	background-size:cover;
 	.fondocolor{
-      background-color:rgba(0,0,0,.3);
 		  height: 100%;
 	}
 }
@@ -31,10 +30,8 @@
 .navbar-inverse .navbar-nav > li > a {
   color:white;
   &:hover{
-    font-weight: 700;
-  }
-
-
+    color:black;
+    }
 }
 @-webkit-keyframes sdb {
   0% {
@@ -102,3 +99,29 @@
 	background-color: #5e42a6;
 	color: white;
 }
+//-----------
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #17d0d5;
+}
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active,
+.navbar-brand:active {
+    color: $fuxia;
+    text-shadow: 6px 6px tomato;
+}
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #1ee2e7;
+}
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #17d0d5;
+}
+

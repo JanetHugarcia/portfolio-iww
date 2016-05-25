@@ -4,14 +4,29 @@ block titulo
 	title Hola
 
 block contenido
-	#aboutme
+	#aboutme.pdt.pdb
 		.container
 			.row
-				.col-md-12
+				.col-md-6
+					img.img-responsive(src="assets/images/jn.png")
+				.col-md-6
 					.text.text-center
 						h2 SOBRE MI
 						p Egresada de Laboratoria con estudios en computación e informática. Dispuesta a maquetar con Sass/Jade y crear aplicaciones con Javascript. Experiencia en Front End e interés en Back End, con el objetivo de convertirse en una Desarrolladora Full-stack.
-						img(src="assets/images/jn.png")
+	#frase.text-center
+		.container
+			.row.pdt.pdb
+				.col-md-6
+					blockquote
+						p "Quiero aprender todo lo que pueda. Y aplicar lo aprendido para el beneficio de mi familia y de los que me rodean."
+						small Algo para decir
+				.col-md-6
+					blockquote
+						p "Soy perseverante, y sé que todo se consigue a base de mucho trabajo y esfuerzo."
+						small Acerca de mí
+	#skills.bck-white
+		p holass
+
 	#portfolio
 		.container
 			.row
@@ -46,3 +61,13 @@ block contenido
 								img(src="assets/images/foco3.png" alt="image")
 							.mix.category-3
 								img(src="assets/images/foco3.png" alt="image")
+	#contactme.bck-white.text-center
+		.container
+			.row
+				.col-md-12
+					p holitas
+	footer.text-center
+		.container
+			.row
+				.col-md-12
+					p © 2016
