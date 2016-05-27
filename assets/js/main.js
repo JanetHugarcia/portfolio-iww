@@ -26,7 +26,6 @@ $(document).ready(function(){
 
 //---scroll animation-----
     $('a[href^="#"]').on('click', function(event) {
-
         var target = $( $(this).attr('href') );
 
         if( target.length ) {
@@ -101,29 +100,33 @@ $(document).ready(function(){
         lastScrollTop = st;
     }
 //---------------------scrollup-----------------
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > $('#hero').outerHeight()) {
-                $('.scrollup').fadeIn();
-            } else {
-                $('.scrollup').fadeOut();
-            }
-        });
-//--------------skillSs--s------------------
-    var alturaSkill = $('#hero').outerHeight() +$('.navbar').outerHeight()+$('#frase').outerHeight()+$('#aboutme').outerHeight();
-    
-    if(alturaSkill >= $(this).scrollTop()){
-          $(".bar").each(function(){
-            $(this).find(".bar-inner").animate({
-                width: $(this).attr("data-width")
-            },2000)
-          });  
-    }else{
-        $(".bar").each(function(){
-            $(this).find(".bar-inner").animate({
-                width: $(this).attr("data-width")
-            },20)
-          }); 
-    }
-    
+  $(window).scroll(function(){
+        if ($(this).scrollTop() > $('#hero').outerHeight()) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+//--------------skills------------------
+  var alturaFrase = $('#hero').outerHeight()+$('.navbar').outerHeight()+$('#frase').outerHeight();
+  // $(".bar").each(function(){
+  //   $(this).find(".bar-inner").animate({
+  //       width: $(this).attr("data-width")
+  //   },2000)
+  // });
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > alturaFrase) {
+            $('.bar').fadeIn();
+              $(".bar").each(function(){
+                $(this).find(".bar-inner").animate({
+                    width: $(this).attr("data-width")
+                },2000)
+              });
+        } else {
+          
+            $('.bar').fadeOut();
+        }
+    });  
+
 });
 

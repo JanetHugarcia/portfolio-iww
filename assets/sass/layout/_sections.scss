@@ -28,13 +28,14 @@
 .my-skills {
   width: 80%;
   margin: 10px auto 25px;
+  margin-bottom: 55px;
 }
 
 .bar-inner {
   width: 0;
   height: 35px;
   line-height: 35px;
-  background: #db3a34;
+  background: $sass;
   border-radius: 5px 0 0 5px;
 }
 
@@ -45,4 +46,32 @@
   font-size: 18px;
   font-weight: bold;
   font-family: "sans-serif";
+}
+.bar{
+  position:relative;
+  .titleSkill{
+    padding: 10px;
+    margin:5px;
+    border-radius:100%;
+    box-shadow:1px 2px 3px lighten($sass,20%);
+    position:absolute;
+    display: block;
+    background:white;
+    top:-25px;
+    left:-40px;
+    .i-skill{
+      width:70px;
+      height: 70px;
+    }
+    .css3img{
+      width:50px;
+      height:50px; 
+      margin: 10px;
+    }
+  }
+  .icon-html5{
+    color:orange;
+    font-size:50px;
+  }
+
 }

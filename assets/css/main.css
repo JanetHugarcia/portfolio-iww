@@ -19,21 +19,6 @@ body {
 .bck-white {
   background-color: white; }
 
-/* --- Clase que agregaremos cuando el usuario haga scroll --- */
-.navstatic {
-  padding: 4px 0px;
-  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-  transition: background .5s ease-in-out,padding .5s ease-in-out; }
-
-.menu-fixed {
-  padding: 0px;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  width: 100%;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
-
 .pd {
   padding-top: 5%; }
 
@@ -190,13 +175,13 @@ button:focus {
 
 #hero {
   background-image: url("../../assets/images/jn-01.jpg");
-  background-color: #FF5475;
+  background-color: #F60736;
   background-size: cover; }
   #hero .fondocolor {
     height: 100%; }
 
 .navbar-inverse {
-  background-color: #FF5475;
+  background-color: #F60736;
   border-color: #080808;
   border-radius: 0; }
 
@@ -283,7 +268,7 @@ a.active {
 .navbar-brand:focus,
 .navbar-brand:active,
 .navbar-brand:active {
-  color: #FF5475;
+  color: #F60736;
   text-shadow: 6px 6px tomato; }
 
 .navbar-default .navbar-nav > .active > a {
@@ -295,6 +280,23 @@ a.active {
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
   background-color: #17d0d5; }
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.navstatic {
+  background-color: #F60736;
+  padding: 4px 0px;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out; }
+
+.menu-fixed {
+  background-color: #FF5475;
+  padding: 0px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
 
 #aboutme {
   background-color: white; }
@@ -317,13 +319,14 @@ a.active {
 .bar-1,
 .my-skills {
   width: 80%;
-  margin: 10px auto 25px; }
+  margin: 10px auto 25px;
+  margin-bottom: 55px; }
 
 .bar-inner {
   width: 0;
   height: 35px;
   line-height: 35px;
-  background: #db3a34;
+  background: #CD6799;
   border-radius: 5px 0 0 5px; }
 
 .bar-percent {
@@ -333,6 +336,29 @@ a.active {
   font-size: 18px;
   font-weight: bold;
   font-family: "sans-serif"; }
+
+.bar {
+  position: relative; }
+  .bar .titleSkill {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 100%;
+    box-shadow: 1px 2px 3px #e6b4cd;
+    position: absolute;
+    display: block;
+    background: white;
+    top: -25px;
+    left: -40px; }
+    .bar .titleSkill .i-skill {
+      width: 70px;
+      height: 70px; }
+    .bar .titleSkill .css3img {
+      width: 50px;
+      height: 50px;
+      margin: 10px; }
+  .bar .icon-html5 {
+    color: orange;
+    font-size: 50px; }
 
 p {
   color: tomato; }
