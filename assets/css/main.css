@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600,800,500,700);
-@font-face {
-  font-family: "Papyrus";
-  src: url("../../assets/fonts/Dense-Regular.otf"); }
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +20,14 @@ body {
   background-color: white; }
 
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.navstatic {
+  padding: 4px 0px;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out; }
+
 .menu-fixed {
+  padding: 0px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -58,7 +62,8 @@ small {
     font-family: 'Poiret One', cursive;
     font-weight: 600; }
   .hero-text #titulo {
-    font-size: 4.5em; }
+    font-size: 4.5em;
+    z-index: 1000; }
   .hero-text #ocupacion {
     font-size: 2em;
     display: inline-block;
@@ -161,6 +166,7 @@ button:focus {
 
 .lines > .particle {
   position: absolute;
+  z-index: -100;
   background-color: rgba(244, 67, 54, 0.5);
   animation: lines 3s linear infinite; }
 
@@ -171,15 +177,26 @@ button:focus {
     transform: translateY(100%); }
   75% {
     transform: translateY(-100%); } }
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  text-indent: -9999px;
+  background-image: url("../../assets/images/icon_top.png") no-repeat; }
+
 #hero {
   background-image: url("../../assets/images/jn-01.jpg");
-  background-color: #F60736;
+  background-color: #FF5475;
   background-size: cover; }
   #hero .fondocolor {
     height: 100%; }
 
 .navbar-inverse {
-  background-color: #F60736;
+  background-color: #FF5475;
   border-color: #080808;
   border-radius: 0; }
 
@@ -266,7 +283,7 @@ a.active {
 .navbar-brand:focus,
 .navbar-brand:active,
 .navbar-brand:active {
-  color: #F60736;
+  color: #FF5475;
   text-shadow: 6px 6px tomato; }
 
 .navbar-default .navbar-nav > .active > a {
@@ -288,6 +305,34 @@ a.active {
 
 #frase blockquote {
   font-size: 1.2em; }
+
+.bar {
+  width: 90%;
+  height: 35px;
+  background-color: rgba(255, 84, 117, 0.3);
+  border-radius: 5px;
+  position: relative;
+  transition: all 2s linear; }
+
+.bar-1,
+.my-skills {
+  width: 80%;
+  margin: 10px auto 25px; }
+
+.bar-inner {
+  width: 0;
+  height: 35px;
+  line-height: 35px;
+  background: #db3a34;
+  border-radius: 5px 0 0 5px; }
+
+.bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "sans-serif"; }
 
 p {
   color: tomato; }

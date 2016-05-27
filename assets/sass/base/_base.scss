@@ -1,10 +1,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,600,800,500,700);
-@font-face{
-	font-family:"Papyrus";
-	src:url("../../assets/fonts/Dense-Regular.otf");
-}
+
 *{
 	margin:0;
 	padding:0;
@@ -26,7 +23,15 @@ body{
 }
 
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.navstatic{
+    padding: 4px 0px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
 .menu-fixed {
+    padding:0px;
 	position:fixed;
 	z-index:1000;
 	top:0;
@@ -65,6 +70,7 @@ small{
 	}
 	#titulo{
 		font-size: 4.5em;
+        z-index: 1000;
 	}
 
 	#ocupacion{
@@ -220,6 +226,7 @@ button:focus{
     .lines {
 	 	>.particle {
 	        position: absolute;
+            z-index: -100;
 	        background-color:rgba(244,67,54,0.5);
 	        animation: lines 3s linear infinite;
 	    }
@@ -235,4 +242,17 @@ button:focus{
    75% {
       transform:translateY(-100%);
    }
+}
+
+//-----------------------icon-top
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    display:none;
+    text-indent:-9999px;
+    background-image: url('../../assets/images/icon_top.png') no-repeat;
 }
