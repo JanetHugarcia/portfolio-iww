@@ -1,55 +1,11 @@
 extends base/base.jade
 
 block titulo
-	title Hola
+	title Janet Milagros
 
 block contenido
 	include ./sections/aboutme.jade
 	include ./sections/frase.jade
 	include ./sections/skills.jade
-	#portfolio
-		.container
-			.row
-				.col-md-12
-					h2 PORTAFOLIO
-
-
-			.row
-				.col-md-12
-					#portafolio
-						.controls
-							button.filter(data-filter="all") Todo
-							button.filter(data-filter=".category-1") Diseño Web
-							button.filter(data-filter=".category-2") Diseño Grafico
-							button.filter(data-filter=".category-3") Apps
-						#containerin.containermixin
-							.mix.category-1
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-2
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-1
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-1
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-3
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-2
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-3
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-2
-								img(src="assets/images/foco3.png" alt="image")
-							.mix.category-3
-								img(src="assets/images/foco3.png" alt="image")
-	#contactme.bck-white.text-center
-		.container
-			.row
-				.col-md-12
-					p holitas
-	footer.text-center
-		.container
-			.row
-				.col-md-12
-					p © 2016 jfsakf 
-					img.scrollup(src="assets/images/icon_top.png", alt="")
-	a.scrollup(href="#hero") Scroll
+	include ./sections/portafolio.jade
+	include ./sections/contact.jade

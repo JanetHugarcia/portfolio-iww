@@ -1,24 +1,64 @@
 #aboutme{
 	background-color:white;
 	.text{
-		padding:20%;
+		padding:5%;
+	}
+	.user{
+		width: 250px;
+		height: auto;
 	}
 	img{
 		margin:auto;
 	}
 
 }
+.icono{
+	font-size: 2.5em;
+	color:white;
+	background-color: $colorPrincipal;
+	border-radius: 50%;
+	border:3px solid $colorPrincipal;
+	&:hover{
+		background-color:white;
+		border-color: white;
+		color:$colorPrincipal;
+		transition: all .8s;
+		box-shadow: 0px 3px rgba(255, 219, 197,.9);
+	}
+}
+.i-principal{
+	padding:15%;
+	text-align: center;
+	margin-bottom: 14px;
+	height: 300px;
+	p{
+		margin-top:5%;
+	}
+
+}
 #frase{
+
+	color:tomato;
 	blockquote{
 		font-size: 1.2em;
+
 	}
 }
 
 //---------------------skillss----------------
+#skills{
+	img{
+		    margin: 0 auto;
+	}
+}
+.table-skill{
+	padding: 15% 0;
+
+}
 .bar {
   width: 90%;
-  height: 35px;
-  background-color: rgba(255, 84, 117,.3);
+  height: 12px;
+  background-color:#ccc;
   border-radius: 5px;
   position: relative;
   transition: all 2s linear;
@@ -27,51 +67,133 @@
 .bar-1,
 .my-skills {
   width: 80%;
-  margin: 10px auto 25px;
-  margin-bottom: 55px;
+  margin: 10px auto ;
 }
 
 .bar-inner {
   width: 0;
-  height: 35px;
+  height: 12px;
   line-height: 35px;
-  background: $sass;
+  background: $tomate;
   border-radius: 5px 0 0 5px;
 }
+//--portfoio
+#portfolio{
 
-.bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "sans-serif";
+	background-color: #2C0F2B;
+	img{
+		margin: 0 15px;
+	}
+
 }
-.bar{
-  position:relative;
-  .titleSkill{
-    padding: 10px;
-    margin:5px;
-    border-radius:100%;
-    box-shadow:1px 2px 3px lighten($sass,20%);
-    position:absolute;
-    display: block;
-    background:white;
-    top:-25px;
-    left:-40px;
-    .i-skill{
-      width:70px;
-      height: 70px;
-    }
-    .css3img{
-      width:50px;
-      height:50px; 
-      margin: 10px;
-    }
-  }
-  .icon-html5{
-    color:orange;
-    font-size:50px;
-  }
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+button{
+  display: inline-block;
+  padding: .3em .7em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.active{
+  background: #68b8c4;
+}
+button:focus{
+  outline: 0 none;
+}
+.containermixin{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4;
+}
+.containermixin:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.containermixin .mix{
+  text-align: left;
+  margin-bottom: 2%;
+  display: none;
+}
 
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+button{
+  display: inline-block;
+  padding: .3em .7em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.active{
+  background: #68b8c4;
+}
+button:focus{
+  outline: 0 none;
+}
+.containermixin{
+  padding: 2% 2% 0;
+  text-align:center;
+  font-size: 0.1px;
+  background: #68b8c4;
+}
+.containermixin:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.containermixin .mix{
+  text-align: left;
+  margin-bottom: 2%;
+  display: none;
+}
+//----contact
+
+#contactme{
+	.col-md-4{
+		&:hover{
+			opacity: .3;
+			transition: 2s;
+		}
+	}
+	.red-social{
+		display: block;
+		width: 250px;
+		height:160px;
+		margin:0 auto;
+		span{
+			display: block;
+			font-size: 3em;
+			padding-top: 34px;
+			color:white;
+		}
+
+
+	}
+	.twitter{
+		background-color:#5EA9DD;
+
+	}
+	.github{
+		background-color: #00BA8D;
+	}
+	.linkedin{
+		background-color: steelblue;
+	}
 }
