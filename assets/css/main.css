@@ -154,6 +154,59 @@ small {
   text-indent: -9999px;
   background-image: url("../../assets/images/icon_top.png") no-repeat; }
 
+.modal {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0; }
+
+.modalvisible {
+  display: block; }
+
+.imagen {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px; }
+    .imagen a:nth-child(2) {
+      margin: 0;
+      height: 100%;
+      flex-shrink: 2; }
+  .imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box; }
+
+.cerrar {
+  display: block;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  border-radius: 50%;
+  line-height: 25px;
+  cursor: pointer; }
+
 .navbar-inverse {
   background-color: #C8293F;
   border: none;
@@ -252,8 +305,7 @@ a.active {
 .i-principal {
   padding: 15%;
   text-align: center;
-  margin-bottom: 14px;
-  height: 300px; }
+  margin-bottom: 14px; }
   .i-principal p {
     margin-top: 5%; }
 
@@ -369,14 +421,17 @@ button:focus {
   margin-bottom: 2%;
   display: none; }
 
+.filter {
+  margin-bottom: 3px; }
+
 #contactme .col-md-4:hover {
-  opacity: .3;
+  background-color: #FFDBC5;
   transition: 2s; }
 #contactme .red-social {
   display: block;
-  width: 250px;
   height: 160px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   #contactme .red-social span {
     display: block;
     font-size: 3em;
@@ -384,10 +439,19 @@ button:focus {
     color: white; }
 #contactme .twitter {
   background-color: #5EA9DD; }
+  #contactme .twitter span {
+    text-shadow: 1px 1px #3493d4, 1px 1px #3493d4, 2px 2px #3493d4, 3px 3px #3493d4, 4px 4px #3493d4, 5px 5px #3493d4, 6px 6px #3493d4, 7px 7px #3493d4, 8px 8px #3493d4, 9px 9px #3493d4, 10px 10px #3493d4; }
 #contactme .github {
   background-color: #00BA8D; }
+  #contactme .github span {
+    text-shadow: 1px 1px #008766, 1px 1px #008766, 2px 2px #008766, 3px 3px #008766, 4px 4px #008766, 5px 5px #008766, 6px 6px #008766, 7px 7px #008766, 8px 8px #008766, 9px 9px #008766, 10px 10px #008766; }
 #contactme .linkedin {
   background-color: steelblue; }
+  #contactme .linkedin span {
+    text-shadow: 1px 1px #38678f, 1px 1px #38678f, 2px 2px #38678f, 3px 3px #38678f, 4px 4px #38678f, 5px 5px #38678f, 6px 6px #38678f, 7px 7px #38678f, 8px 8px #38678f, 9px 9px #38678f, 10px 10px #38678f; }
+
+.esencia {
+  background-color: white; }
 
 footer {
   padding: 1%;
@@ -397,11 +461,17 @@ footer {
 
 @media screen and (max-width: 768px) {
   #hero .fondocolor .hero-text {
-    padding: 70% 15% 0%; }
+    padding: 70% 10% 0%; }
     #hero .fondocolor .hero-text #titulo {
       font-size: 3em; }
 
   .navbar-inverse .navbar-brand #titulo {
-    font-size: 1.5em; } }
+    font-size: 1.3em; }
+
+  .navbar-inverse .navbar-toggle {
+    margin-top: 15px; } }
+@media screen and (max-width: 992px) {
+  .i-principal {
+    padding: 15% 15% 0%; } }
 
 /*# sourceMappingURL=main.css.map */

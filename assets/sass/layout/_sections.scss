@@ -30,7 +30,6 @@
 	padding:15%;
 	text-align: center;
 	margin-bottom: 14px;
-	height: 300px;
 	p{
 		margin-top:5%;
 	}
@@ -163,37 +162,53 @@ button:focus{
   margin-bottom: 2%;
   display: none;
 }
+.filter{
+	 margin-bottom: 3px;
+}
 //----contact
 
 #contactme{
 	.col-md-4{
 		&:hover{
-			opacity: .3;
+			background-color: $cielo;
 			transition: 2s;
+
 		}
 	}
 	.red-social{
 		display: block;
-		width: 250px;
 		height:160px;
 		margin:0 auto;
+		overflow: hidden;
 		span{
 			display: block;
 			font-size: 3em;
 			padding-top: 34px;
 			color:white;
 		}
-
-
 	}
 	.twitter{
 		background-color:#5EA9DD;
+		span{
+			text-shadow: icon-long-shadow(10,darken(#5EA9DD,10%));
+		}
 
 	}
 	.github{
 		background-color: #00BA8D;
+		span{
+			text-shadow: icon-long-shadow(10,darken(#00BA8D,10%));
+		}
+
 	}
 	.linkedin{
 		background-color: steelblue;
+		span{
+			text-shadow: icon-long-shadow(10,darken(steelblue,10%));
+		}
+
 	}
+}
+.esencia{
+	background-color: white;
 }
