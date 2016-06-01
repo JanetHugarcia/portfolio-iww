@@ -15,9 +15,8 @@ $(document).ready(function(){
         }
     }
 
-    setInterval(Opacidad, 1000);
-
-
+    setInterval(Opacidad, 5000);
+	
 /*How to make the hero section always fill browser window?*/
     $(window).resize(function() {
         $('#hero').height($(window).height());
@@ -55,7 +54,7 @@ $(document).ready(function(){
   }
 
   initparticles();
-// Hide Header on on scroll down
+// --------------------------Hide Header on on scroll down-----------------------
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
@@ -102,18 +101,19 @@ $(document).ready(function(){
 //---------------------scrollup-----------------
   $(window).scroll(function(){
         if ($(this).scrollTop() > $('#hero').outerHeight()) {
-            $('.scrollup').fadeIn();
+            $('.scrollup').fadeIn(4000);
         } else {
-            $('.scrollup').fadeOut();
+            $('.scrollup').fadeOut(4000);
         }
+		
+				if ($(this).scrollTop() > $('#hero').outerHeight()){
+					$('.i-principal').removeClass('hidden').addClass('animated fadeInUp');
+				}
+
     });
 //--------------skills------------------
   var alturaFrase = $('#hero').outerHeight()+$('.navbar').outerHeight()+$('#frase').outerHeight();
-  // $(".bar").each(function(){
-  //   $(this).find(".bar-inner").animate({
-  //       width: $(this).attr("data-width")
-  //   },2000)
-  // });
+
     $(window).scroll(function(){
         if ($(this).scrollTop() > alturaFrase) {
             $('.bar').fadeIn();
@@ -127,6 +127,7 @@ $(document).ready(function(){
             $('.bar').fadeOut();
         }
     });  
+
 
 });
 
