@@ -369,34 +369,27 @@ button:focus {
 .filter {
   margin-bottom: 3px; }
 
-#contactme .col-md-4:hover {
-  background-color: #FFDBC5;
-  transition: 2s; }
 #contactme .red-social {
+  margin: 5px auto;
+  width: 100px;
+  height: 100px;
   display: block;
-  height: 160px;
-  margin: 0 auto;
-  overflow: hidden; }
-  #contactme .red-social span {
-    display: block;
-    font-size: 3em;
-    padding-top: 34px;
-    color: white; }
-#contactme .twitter {
-  background-color: #5EA9DD; }
-  #contactme .twitter span {
-    text-shadow: 1px 1px #3493d4, 1px 1px #3493d4, 2px 2px #3493d4, 3px 3px #3493d4, 4px 4px #3493d4, 5px 5px #3493d4, 6px 6px #3493d4, 7px 7px #3493d4, 8px 8px #3493d4, 9px 9px #3493d4, 10px 10px #3493d4; }
-#contactme .github {
-  background-color: #00BA8D; }
-  #contactme .github span {
-    text-shadow: 1px 1px #008766, 1px 1px #008766, 2px 2px #008766, 3px 3px #008766, 4px 4px #008766, 5px 5px #008766, 6px 6px #008766, 7px 7px #008766, 8px 8px #008766, 9px 9px #008766, 10px 10px #008766; }
-#contactme .linkedin {
-  background-color: steelblue; }
-  #contactme .linkedin span {
-    text-shadow: 1px 1px #38678f, 1px 1px #38678f, 2px 2px #38678f, 3px 3px #38678f, 4px 4px #38678f, 5px 5px #38678f, 6px 6px #38678f, 7px 7px #38678f, 8px 8px #38678f, 9px 9px #38678f, 10px 10px #38678f; }
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 3em;
+  padding: 14px;
+  color: white;
+  text-shadow: 1px 1px #9b1f2e, 1px 1px #9b1f2e, 2px 2px #9b1f2e, 3px 3px #9b1f2e, 4px 4px #9b1f2e, 5px 5px #9b1f2e, 6px 6px #9b1f2e, 7px 7px #9b1f2e, 8px 8px #9b1f2e, 9px 9px #9b1f2e, 10px 10px #9b1f2e;
+  background-color: #C6273B; }
+  #contactme .red-social:hover {
+    text-decoration: none;
+    background-color: #e3707f;
+    transition: 2s; }
 
 .esencia {
   background-color: white; }
+  .esencia img {
+    margin: 0 auto; }
 
 footer {
   padding: 1%;
