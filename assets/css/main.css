@@ -370,10 +370,10 @@ button:focus {
   margin-bottom: 3px; }
 
 #contactme .red-social {
-  margin: 5px auto;
+  margin: 5px;
   width: 100px;
   height: 100px;
-  display: block;
+  display: inline-block;
   overflow: hidden;
   border-radius: 10px;
   font-size: 3em;
@@ -389,7 +389,12 @@ button:focus {
 .esencia {
   background-color: white; }
   .esencia img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 100px; }
+
+.imagen {
+  width: 183px;
+  height: 260px; }
 
 footer {
   padding: 1%;
@@ -407,7 +412,15 @@ footer {
     font-size: 1.3em; }
 
   .navbar-inverse .navbar-toggle {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+
+  .avatar {
+    width: 40%; }
+
+  #contactme .red-social {
+    width: 70px;
+    height: 70px;
+    font-size: 1em; } }
 @media screen and (max-width: 992px) {
   .i-principal {
     padding: 15% 15% 0%; } }

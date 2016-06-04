@@ -169,10 +169,10 @@ button:focus{
 
 #contactme{
 	.red-social{
-		margin:5px auto;
+		margin:5px ;
 		width:100px;
 		height: 100px;
-		display: block;
+		display: inline-block;
 		overflow: hidden;
 		border-radius:10px;
 		font-size: 3em;
@@ -193,5 +193,10 @@ button:focus{
 	background-color: white;
 	img{
 		margin:0 auto;
+		width: 100px;
 	}
+}
+.imagen{
+	width:183px;
+	height:260px;
 }

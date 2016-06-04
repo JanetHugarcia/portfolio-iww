@@ -101,15 +101,11 @@ $(document).ready(function(){
 //---------------------scrollup-----------------
   $(window).scroll(function(){
         if ($(this).scrollTop() > $('#hero').outerHeight()) {
-            $('.scrollup').fadeIn(4000);
+            $('.scrollup').fadeIn();
         } else {
-            $('.scrollup').fadeOut(4000);
+            $('.scrollup').fadeOut();
         }
 		
-				if ($(this).scrollTop() > $('#hero').outerHeight()){
-					$('.i-principal').removeClass('hidden').addClass('animated fadeInUp');
-				}
-
     });
 //--------------skills------------------
   var alturaFrase = $('#hero').outerHeight()+$('.navbar').outerHeight()+$('#frase').outerHeight();

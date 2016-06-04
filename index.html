@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/fontello.css"/>
     <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <script src="assets/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="hero">
@@ -42,7 +44,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Portada</a></li>
             <li><a href="#aboutme">Sobre mí</a></li>
             <li><a href="#portfolio">Portafolio</a></li>
             <li><a href="#contactme">Contáctame</a></li>
@@ -52,28 +54,28 @@
     </div>
     <div id="aboutme" class="pdt pdb">
       <div class="container">
-        <div class="row pdt pdb">
+        <div data-wow-duration="1000ms" data-wow-delay="300ms" class="row pdt pdb wow fadeInLeft">
           <div class="col-md-4">
-            <div class="i-principal hidden"><span class="icono icon-heart-empty"></span>
+            <div class="i-principal"><span class="icono icon-heart-empty"></span>
               <p>Curiosa por la tecnología. Ganas de saberlo todo y Crear increíbles aplicaciones.</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="i-principal hidden"><span class="icono icon-flash"></span>
+            <div class="i-principal"><span class="icono icon-flash"></span>
               <p>A veces entiendo más la teoría con la práctica.</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="i-principal hidden"><span class="icono icon-users"></span>
+            <div class="i-principal"><span class="icono icon-users"></span>
               <p>Capacidad para trabajar en equipo</p>
             </div>
           </div>
         </div>
-        <div class="row pdb">
+        <div data-wow-duration="1000ms" data-wow-delay="300ms" class="row pdb wow fadeInRight">
           <div class="col-md-6">
             <div class="text text-center">
               <h2>SOBRE MI</h2>
-              <p>Egresada de Laboratoria con estudios en computación e informática. Dispuesta a maquetar con Sass/Jade y crear aplicaciones con Javascript. Experiencia en Front End e interés en Back End, con el objetivo de convertirse en una Desarrolladora Full-stack.</p>
+              <p>Egresada de Laboratoria con estudios en computación e informática. Dispuesta a usar nuevas tecnologías y crear increíbles aplicaciones. Experiencia en Front End e interés en Back End, con el objetivo de convertirse en una Desarrolladora Full-stack.</p>
             </div>
           </div>
           <div class="col-md-6"><img src="assets/images/foto.jpg" class="img-responsive user"/></div>
@@ -84,12 +86,12 @@
       <div class="fondocolor">
         <div class="container">
           <div class="row pdt pdb">
-            <div class="col-md-6">
+            <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-md-6 wow fadeInLeft">
               <blockquote>
                 <p>"Quiero aprender todo lo que pueda. Y aplicar lo aprendido para el beneficio de mi familia y de los que me rodean."</p><small>Algo para decir</small>
               </blockquote>
             </div>
-            <div class="col-md-6">
+            <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-md-6 wow fadeInRight">
               <blockquote>
                 <p>"Soy perseverante, y sé que todo se consigue a base de mucho trabajo y esfuerzo."</p><small>Acerca de mí</small>
               </blockquote>
@@ -106,36 +108,36 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6"><img src="assets/images/janet.png" class="img-responsive"/></div>
+          <div class="col-md-6"><img src="assets/images/janet.png" class="avatar img-responsive"/></div>
           <div class="col-md-6">
             <div class="table-skill">
               <div class="bar-1">
                 <label>HTML5</label>
-                <div data-width="65%" class="bar">
+                <div data-width="90%" class="bar">
                   <div class="bar-inner"></div>
                 </div>
               </div>
               <div class="bar-1">
                 <label>CSS3</label>
-                <div data-width="55%" class="bar">
-                  <div class="bar-inner"></div>
-                </div>
-              </div>
-              <div class="bar-1">
-                <label>JavaScript</label>
                 <div data-width="86%" class="bar">
                   <div class="bar-inner"></div>
                 </div>
               </div>
               <div class="bar-1">
+                <label>JavaScript</label>
+                <div data-width="50%" class="bar">
+                  <div class="bar-inner"></div>
+                </div>
+              </div>
+              <div class="bar-1">
                 <label>Sass</label>
-                <div data-width="55%" class="bar">
+                <div data-width="65%" class="bar">
                   <div class="bar-inner"></div>
                 </div>
               </div>
               <div class="bar-1">
                 <label>Jade</label>
-                <div data-width="55%" class="bar">
+                <div data-width="65%" class="bar">
                   <div class="bar-inner"></div>
                 </div>
               </div>
@@ -156,30 +158,47 @@
             <div id="portafolio">
               <div class="controls">
                 <button data-filter="all" class="filter">Todo</button>
-                <button data-filter=".category-1" class="filter">Maquetación</button>
-                <button data-filter=".category-2" class="filter">Responsive Design</button>
-                <button data-filter=".category-3" class="filter">App JS</button>
-                <button data-filter=".category-4" class="filter">Sass</button>
-                <button data-filter=".category-5" class="filter">Jade</button>
+                <button data-filter=".category-Esconder" class="filter">Esconder</button>
+                <button data-filter=".category-Maquetacion" class="filter">Maquetación</button>
+                <button data-filter=".category-Responsive" class="filter">Responsive Design</button>
+                <button data-filter=".category-SassJade" class="filter">Sass/Jade</button>
+                <button data-filter=".category-Javascript" class="filter">Javascript</button>
+                <button data-filter=".category-Contribucion" class="filter">Contribuciones</button>
               </div>
               <div id="containerin" class="containermixin row">
-                <div class="mix category-3"><a href="#img1" class="mostrarmodal"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
-                <div class="mix category-2"><a href="#"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
-                <div class="mix category-3"><a href="#"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
-                <div class="mix category-5"><a href="#"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
-                <div class="mix category-4"><a href="#"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
-                <div class="mix category-4"><a href="#"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
-                <div class="mix category-3"><a href="#"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
-                <div class="mix category-2"><a href="#"><img src="assets/images/tictactoemin.png" alt="image" class="img-responsive"/></a></div>
+                <div class="mix category-Javascript"><a href="http://janethugarcia.github.io/tic-tac-toe/" target="n_blank" class="mostrarmodal"><img src="assets/images/tictactoemin.png" alt="tic tac toe" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive"><a href="http://janethugarcia.github.io/triangle-theme/" target="n_blank"><img src="assets/images/triangle.png" alt="triangle" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Javascript"><a href="http://janethugarcia.github.io/DOM-to-do-app/" target="n_blank"><img src="assets/images/to_do_app.png" target="n_blank" alt="tic tac toe" class="img-responsive imagen"/></a></div>
+                <div class="mix category-SassJade category-Responsive"><a href="http://janethugarcia.github.io/agency-theme/" target="n_blank"><img src="assets/images/agency.png" alt="agency" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Javascript"><a href="http://janethugarcia.github.io/smash-faces/" target="n_blank"><img src="assets/images/smash-faces.png" alt="smash faces" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Maquetacion"><a href="http://janethugarcia.github.io/grid-system/" target="n_blank"><img src="assets/images/grid-system-maq.png" alt="grid system" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Maquetacion"><a href="http://janethugarcia.github.io/cinema-layout/" target="n_blank"><img src="assets/images/cinema.png" alt="cinema" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Maquetacion"><a href="http://janethugarcia.github.io/prettify/" target="n_blank"><img src="assets/images/prettify.png" alt="prettify" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Maquetacion"><a href="http://janethugarcia.github.io/tini/" target="n_blank"><img src="assets/images/tini-maq.png" alt="tini" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Maquetacion"><a href="http://janethugarcia.github.io/tini/" target="n_blank"><img src="assets/images/ecomunidad-maq.png" alt="ecomunidad" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Maquetacion"><a href="http://janethugarcia.github.io/escuela-de-danza/" target="n_blank"><img src="assets/images/escuela-danza.png" alt="ecomunidad" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive category-Contribucion"><a href="http://janethugarcia.github.io/primes/" target="n_blank"><img src="assets/images/primes.png" alt="primes" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive category-Contribucion"><a href="http://sazabache.github.io/Mi-Portafolio/" target="n_blank"><img src="assets/images/mi-portafolio.png" alt="mi portafolio" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive"><a href="http://janethugarcia.github.io/responsive-blog/" target="n_blank"><img src="assets/images/responsive-blog.png" alt="responsive blog" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive"><a href="http://janethugarcia.github.io/user-testing/" target="n_blank"><img src="assets/images/user-testing.png" alt="user testing" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive"><a href="http://janethugarcia.github.io/grid-system-bootstrap/" target="n_blank"><img src="assets/images/grid-system-bootstrap.png" alt="grid system bootstrap" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive"><a href="http://janethugarcia.github.io/dashum-free-theme/" target="n_blank"><img src="assets/images/dashum.png" alt="dashum" class="img-responsive imagen"/></a></div>
+                <div class="mix category-Responsive category-SassJade"><a href="http://janethugarcia.github.io/kane-theme/" target="n_blank"><img src="assets/images/kane.png" alt="kane" class="img-responsive imagen"/></a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="img1" class="modal">
-      <h1>Imagen 1</h1>
-      <div class="imagen"><a href="" class="beforeimg">&#60;</a><a href="" class="imgactual"> </a><a href="" class="afterimg">></a></div><span class="cerrar">x</span>
+    <div class="esencia text-center pdb pdt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>"Cada persona es un mundo de ideas.. Lo que me gusta de la programación es que con el código podemos materializar esas ideas."</p>
+          </div>
+          <div class="col-md-12"><img src="assets/images/foco.png" alt="" class="img-responsive"/></div>
+        </div>
+      </div>
     </div>
     <div id="contactme" class="bck-white text-center pdb pdt">
       <div class="container">
@@ -189,19 +208,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-2 col-md-offset-3 twitter"><a href="#" class="icon-twitter red-social"></a></div>
-          <div class="col-md-2 github"><a href="#" class="red-social icon-github"></a></div>
-          <div class="col-md-2 linkedin"><a href="#" class="red-social icon-linkedin"></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="esencia text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>"Cada persona tiene una idea. Lo que me gusta de la programación es que con el código podemos materializar esas idea"</p>
-          </div>
-          <div class="col-md-12"><img src="assets/images/foco.png" alt="" class="img-responsive"/></div>
+          <div class="col-md-12"><a href="#" class="icon-twitter red-social"></a><a href="#" class="red-social icon-github"></a><a href="#" class="red-social icon-linkedin"></a></div>
         </div>
       </div>
     </div>
