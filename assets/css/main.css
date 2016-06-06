@@ -38,12 +38,12 @@ small {
   color: #F8F8F6; }
 
 #hero {
-  background-image: url("../../assets/images/ciudad.jpg");
+  background-image: url("../../assets/images/ciudad.png");
   background-attachment: fixed;
   background-size: cover; }
   #hero .fondocolor {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.8); }
     #hero .fondocolor .hero-text {
       padding: 25% 25% 0% 25%; }
       #hero .fondocolor .hero-text #titulo {
@@ -51,7 +51,7 @@ small {
         z-index: 1000; }
       #hero .fondocolor .hero-text #ocupacion {
         font-size: 2em;
-        color: #C8293F; }
+        color: #C6273B; }
     #hero .fondocolor .idea .iconp {
       margin-right: 5%; }
 
@@ -404,7 +404,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   #hero .fondocolor .hero-text {
-    padding: 60% 10% 0%; }
+    padding: 60% 0% 0%; }
     #hero .fondocolor .hero-text #titulo {
       font-size: 3em; }
 

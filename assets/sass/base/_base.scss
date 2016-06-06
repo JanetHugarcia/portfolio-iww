@@ -42,12 +42,12 @@ small{
 	color:#F8F8F6;
 }
 #hero{
-	background-image:url('../../assets/images/ciudad.jpg');
+	background-image:url('../../assets/images/ciudad.png');
 	background-attachment: fixed;
 	background-size:cover;
 	.fondocolor{
 		height: 100%;
-		background-color:rgba(0,0,0,.3);
+		background-color:rgba(0,0,0,.8);
 		.hero-text{
 			padding: 25% 25% 0% 25%;
 			#titulo{
@@ -56,7 +56,7 @@ small{
 			}
 			#ocupacion{
 				font-size: 2em;
-				color:$colorPrincipal;
+				color:$tomate;
 			}
 		}
 		.idea{
