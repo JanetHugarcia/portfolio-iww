@@ -12,7 +12,7 @@
 body {
   font-family: 'Dosis', sans-serif;
   font-size: 18px;
-  background-color: #FFDBC5; }
+  background-color: rgba(1, 1, 0, 0.5); }
 
 .pdt {
   padding-top: 25px; }
@@ -45,9 +45,10 @@ small {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); }
     #hero .fondocolor .hero-text {
-      padding: 25% 25% 0% 25%; }
+      padding: 18% 25% 0% 25%; }
       #hero .fondocolor .hero-text #titulo {
         font-size: 4.5em;
+        text-shadow: 2px 2px rgba(255, 0, 35, 0.9);
         z-index: 1000; }
       #hero .fondocolor .hero-text #ocupacion {
         font-size: 2em;
@@ -155,7 +156,8 @@ small {
 .navbar-inverse {
   background-color: #C8293F;
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  margin-bottom: 0px; }
 
 .navbar-brand {
   height: auto;
@@ -255,19 +257,20 @@ a.active {
     margin-top: 5%; }
 
 #frase {
-  color: tomato; }
+  color: white; }
   #frase blockquote {
     font-size: 1.2em; }
 
 #skills img {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 200px; }
 
 .table-skill {
   padding: 15% 0; }
 
 .bar {
   width: 90%;
-  height: 12px;
+  height: 5px;
   background-color: #ccc;
   border-radius: 5px;
   position: relative;
@@ -275,18 +278,24 @@ a.active {
 
 .bar-1,
 .my-skills {
-  width: 80%;
+  width: 85%;
   margin: 10px auto; }
+
+.bar-1 p {
+  padding: 5%; }
+  .bar-1 p span {
+    font-size: 1.3em;
+    text-transform: uppercase; }
 
 .bar-inner {
   width: 0;
-  height: 12px;
+  height: 3px;
   line-height: 35px;
   background: #C6273B;
   border-radius: 5px 0 0 5px; }
 
 #portfolio {
-  background-color: #2C0F2B; }
+  background-color: #1493CC; }
   #portfolio img {
     margin: 0 15px; }
 
@@ -404,7 +413,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   #hero .fondocolor .hero-text {
-    padding: 60% 0% 0%; }
+    padding: 18% 20% 0% 20%; }
     #hero .fondocolor .hero-text #titulo {
       font-size: 3em; }
 
