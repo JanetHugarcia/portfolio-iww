@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Dosis";
-  src: url("./../../../public/fonts/Dosis-Book.ttf");
+  src: url("./../../../fonts/Dosis-Book.ttf");
 }
 
 @font-face {
   font-family: "Poiret";
-  src: url("./../../../public/fonts/PoiretOne-Regular.otf");
+  src: url("./../../../fonts/PoiretOne-Regular.otf");
 }
 * {
   margin: 0;
@@ -42,7 +42,7 @@ small {
   color: #f8f8f6;
 }
 #hero {
-  background-image: url("./../../../public/images/ciudad.png");
+  background-image: url("./../../../images/ciudad.png");
   background-attachment: fixed;
   background-size: cover;
   .fondocolor {
@@ -190,7 +190,7 @@ small {
   right: 24px;
   display: none;
   text-indent: -9999px;
-  background-image: url("./../../../public/images/icon_top.png") no-repeat;
+  background-image: url("./../../../images/icon_top.png") no-repeat;
 }
 
 //_----------
