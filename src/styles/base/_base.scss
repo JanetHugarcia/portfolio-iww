@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Dosis";
-  src: url("./../../fonts/Dosis-Book.ttf");
+  src: url("../fonts/Dosis-Book.ttf");
 }
 
 @font-face {
   font-family: "Poiret";
-  src: url("./../../fonts/PoiretOne-Regular.otf");
+  src: url("../fonts/PoiretOne-Regular.otf");
 }
 * {
   margin: 0;
@@ -42,7 +42,7 @@ small {
   color: #f8f8f6;
 }
 #hero {
-  background-image: url("./../../images/ciudad.png");
+  background-image: url("../images/ciudad.png");
   background-attachment: fixed;
   background-size: cover;
   .fondocolor {
