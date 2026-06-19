@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Indicamos que suba el contenido de la carpeta donde se genera tu compilado
-          path: "./dist"
+          path: "${{ github.workspace }}/dist/"
 
       - name: Deploy to GitHub Pages
         id: deployment
