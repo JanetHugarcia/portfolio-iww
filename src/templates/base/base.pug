@@ -1,0 +1,46 @@
+include ./mixin.pug
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport",content="width=device-width,initial-scale=1.0,user-scalable=1.0, maximum-scale=1.0,minimum-scale=1.0")
+		block titulo
+			title Document
+		link(rel="icon",type="image/png", href="images/idea4.png")
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/fontello.css")
+		link(rel="stylesheet", href="css/animate.css")
+		link(rel="stylesheet", href="css/main.css")
+		script(src='js/wow.min.js')
+		script new WOW().init();
+
+	body(data-spy="scroll" data-target=".navbar" data-offset="50")
+		#hero
+			.fondocolor
+				.container
+					.row
+						.col-md-12
+							.hero-text.text-center
+								img.iconp(src="images/codigo.png")
+								P#ocupacion Mi portafolio
+								h1#titulo.particletext.lines Janet <span>Milagros</span>
+								P#ocupacion Desarrolladora Front-end
+
+
+								.pd
+									#preloader6
+										span
+										span
+										span
+										span
+
+			a#about.scroll-down.nav-link(href="#aboutme")
+
+
+		include ./header.pug
+		block contenido
+		include ./footer.pug
+		script(src='js/jquery.js')
+		script(src='js/bootstrap.min.js')
+		script(src='js/jquery.mixitup.js')
+		script(src='js/main.js')
