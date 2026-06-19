@@ -11,10 +11,12 @@
     "build": "pnpm run clean && pnpm run build:html && pnpm run build:css && pnpm run copy:assets",
     "watch:html": "pug src/templates/index.pug --out dist --watch",
     "watch:css": "sass --watch src/styles/main.scss:dist/css/main.css",
+    "watch:assets": "chokidar \"public/**/*\" -c \"pnpm run copy:assets\"",
+    "dev:server": "browser-sync start --server dist --files 'dist/**/*'",
     "serve": "serve dist -l 3000",
-    "dev": "pnpm run build && concurrently -k \"pnpm run watch:html\" \"pnpm run watch:css\" \"pnpm run serve\""
+    "dev": "pnpm run build && concurrently \"pnpm run watch:html\" \"pnpm run watch:css\" \"pnpm run watch:assets\" \"pnpm run dev:server\""
   },
-  "keywords": [],
+  "keywords": [ ],
   "author": "",
   "license": "ISC",
   "devEngines": {
@@ -28,6 +30,8 @@
   "devDependencies": {
     "@rsbuild/core": "^2.0.15",
     "@rsbuild/plugin-sass": "^1.5.3",
+    "browser-sync": "^3.0.4",
+    "chokidar-cli": "^3.0.0",
     "concurrently": "^10.0.3",
     "cpy-cli": "^7.0.0",
     "pug": "^3.0.4",
