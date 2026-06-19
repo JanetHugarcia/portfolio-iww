@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build:html": "pug src/templates/index.pug --out dist --pretty",
-    "build:css": "sass src/styles/main.scss dist/css/main.css --style=compressed",
+    "build:css": "sass src/styles/main.scss dist/css/main.css --style=compressed --no-source-map",
     "copy:assets": "cpy 'public/**/*' dist",
     "watch:assets": "chokidar 'public/**/*' -c 'pnpm run copy:assets'",
     "build": "pnpm run clean && pnpm run build:html && pnpm run build:css && pnpm run copy:assets",
